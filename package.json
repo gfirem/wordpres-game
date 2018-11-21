@@ -1,0 +1,39 @@
+{
+  "name": "wordpress-game",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gfirem/wordpres-game.git"
+  },
+  "contributors": [
+    "Guillermo Figueroa (https://github.com/gfirem)"
+  ],
+  "scripts": {
+    "postinstall": "cd backend/functions && npm install",
+    "functions:config": "firebase functions:config:set project.gcloud_project=\"[GCLOUD_PROJECT]\" project.security_header=\"[SECURITY_HEADER]\"",
+    "deploy": "npm run functions:config && firebase deploy"
+  },
+  "keywords": [
+    "bot",
+    "chatbot",
+    "google home",
+    "google assistant",
+    "google assistant wordpress",
+    "wordpress quiz",
+    "quiz",
+    "google assistant wordpress quiz"
+  ],
+  "bugs": {
+    "url": "https://github.com/gfirem/wordpres-game/issues"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "http": "0.0.0"
+  }
+}

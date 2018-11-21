@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Que es WordPress?",
+    "answers": [
+      "Un manejador de contenido",
+      "Una aplicacion movil",
+      "No se"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Porque hay que actualizar WordPress?",
+    "answers": [
+      "No es necesario",
+      "Para evitar problemas de seguridad y estabilidad",
+      "Para que se mantenga bonito"
+    ],
+    "correctAnswer": 1
+  }
+]
