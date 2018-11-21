@@ -4,12 +4,9 @@ const express = require('express');
 const expressSanitizer = require('express-sanitizer');
 const questions = require('../../data/questions');
 
-const registrationToken = 'edh8QZu9mIE:APA91bG-n8qW6bcsJPQFFsTmq9o8iHGriapq9ARssVwQkJMRO1RGVIigMzdtooh1yG7N4l2XTt8dUvP5OJ6g5Tcis7AzjwuPIpaP_i9JUVXQpck5uwRYSyFrZavB0bp5iQWvu6QTzVV7';
-const topic = 'WINNERS';
-
 const admin = require('firebase-admin');
 
-const serviceAccount = require("../../../../.credentials");
+const serviceAccount = require("../../../.credentials");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -27,7 +24,7 @@ app.get('/', (request, response) => {
   console.log('Frontend Request body: ' + JSON.stringify(request.body));
 
   // This registration token comes from the client FCM SDKs.
-  var registrationToken = 'edh8QZu9mIE:APA91bG-n8qW6bcsJPQFFsTmq9o8iHGriapq9ARssVwQkJMRO1RGVIigMzdtooh1yG7N4l2XTt8dUvP5OJ6g5Tcis7AzjwuPIpaP_i9JUVXQpck5uwRYSyFrZavB0bp5iQWvu6QTzVV7';
+  var registrationToken = 'fXR_Xi9Z9og:APA91bGqpGbyd1YfWhcQiiFQueRRF5yCaGbFVeP9yMCJOjM_0662ngoyKjoyrpTdrE4wTKVexqBHhkmjIOkrkdVioAgPsGJ5crGoBnrM960a2CeSkgfUWtpXiJtZ3XNV-y3rLeTPB1xi';
 
 // See documentation on defining a message payload.
   var data = JSON.stringify([

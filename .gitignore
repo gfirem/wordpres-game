@@ -26,3 +26,5 @@ package-lock.json
 /test/config.json
 .credential*.json
 .firebaserc
+.idea/*
+backend/.firebase
